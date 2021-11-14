@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "lbenicio-minimal-v1"
-  spec.version       = "0.0.7"
+  spec.version       = "0.0.8"
   spec.authors       = ["Leonardo Benicio"]
   spec.email         = ["developer@lbenicio.dev"]
 
@@ -13,9 +13,9 @@ Gem::Specification.new do |spec|
 
   #spec.files         = git ls-files -z.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
-  spec.add_development_dependency "jekyll", "~> 3.3"
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7.1"
+  spec.add_development_dependency "jekyll", "~> 4.2.0"
+  spec.add_development_dependency "bundler", "~> 2.2.31"
   spec.add_development_dependency "jekyll-feed", "~> 1.12"
   spec.add_development_dependency "jekyll-sitemap", "~> 1.12"
   spec.add_development_dependency "jekyll-archives", "~> 2.2.1"
