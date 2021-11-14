@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "lbenicio-minimal-v1"
-  spec.version       = "0.0.9"
+  spec.version       = "0.0.10"
   spec.authors       = ["Leonardo Benicio"]
   spec.email         = ["developer@lbenicio.dev"]
 
