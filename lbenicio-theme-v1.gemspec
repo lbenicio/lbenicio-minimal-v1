@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "lbenicio-theme-v1"
-  spec.version       = "0.0.4"
+  spec.version       = "0.0.5"
   spec.authors       = ["Leonardo Benicio"]
   spec.email         = ["developer@lbenicio.dev"]
 
@@ -22,6 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jekyll-tagging", "~> 1.1.0"
   spec.add_development_dependency "jekyll-tagging-related_posts", "~> 1.1.0"
   spec.add_development_dependency "jekyll-paginate-v2", "~> 3.0.0"
-  spec.add_development_dependency "jekyll-google_search_console_verification_file", "~> 1.0.1"
   spec.add_development_dependency "jekyll-minifier", "~> 0.0.3"
 end

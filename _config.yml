@@ -1,4 +1,4 @@
-theme: lbenicio-theme-v1
+theme: lbenicio-minimal-v1
 title: Website Title
 author: Leonardo Benicio
 email: your@email.com
@@ -11,9 +11,6 @@ keybase_username: <your_username>
 reddit_username: <your_username>
 github_username: <your_username>
 linkedin_username: <your_username>
-
-google_search_console:
-  verification_file_code: <your_google_verification_code>
 
 # SEO
 twitter:
