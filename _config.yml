@@ -1,0 +1,75 @@
+theme: lbenicio-theme-v1
+title: Website Title
+author: Leonardo Benicio
+email: your@email.com
+description: Website description.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
+blog: "https://blog.your_blog_website.url"
+twitter_username: <your_username>
+keybase_username: <your_username>
+reddit_username: <your_username>
+github_username: <your_username>
+linkedin_username: <your_username>
+
+google_search_console:
+  verification_file_code: <your_google_verification_code>
+
+# SEO
+twitter:
+  username: <your_username>
+  card: summary
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/<your_username>
+    - https://linkedin.com/in/<your_username>
+    - https://github.com/<your_username>
+    - https://keybase.io/<your_username>
+
+logo: /assets/img/logo.png
+image: /assets/img/logo.png
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-tagging
+  - jekyll-tagging-related_posts
+  - jekyll-paginate-v2
+  - jekyll-google_search_console_verification_file
+  - jekyll-minifier
+
+# Build settings
+permalink: pretty
+highlighter: rouge
+timezone: America/Brazil
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+svg:
+  optimize: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
