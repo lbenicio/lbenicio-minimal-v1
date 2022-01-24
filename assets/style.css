@@ -3,7 +3,7 @@ body {
 }
 
 .fork-me {
-    width: 15rem;
+    width: 13rem;
     right: 0;
     position: fixed;
     z-index: 999;
@@ -11,38 +11,23 @@ body {
     border: 1rem solid black;
 }
 
-a.fork-me:link {
+a.fork-me:link, a.fork-me:visited, a.fork-me:hover, a.fork-me:active, a.post-link:link, a.post-link:visited, a.post-link:hover, a.post-link:active, a.nav-blog-links:link, a.nav-blog-links:visited, a.nav-blog-links:hover, a.nav-blog-links:active {
     text-decoration: none;
 }
 
-a.fork-me:visited {
-    text-decoration: none;
-}
-
-a.fork-me:hover {
-    text-decoration: none;
-}
-
-a.fork-me:active {
-    text-decoration: none;
-}
-
-nav>ul {
+nav>ul, ul.post-list {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
 }
-
 .h-main {
     height: 80vh;
+}
+
+.fs-10 {
+    font-size: 0.5rem;
 }
 
 @media (max-width: 576px) {
     .fork-me {
         width: 3rem;
-    }
-
-    .fork-me>span>p {
-        margin-left: 5rem !important;
     }
 }
