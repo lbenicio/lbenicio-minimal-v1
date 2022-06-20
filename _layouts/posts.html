@@ -13,7 +13,7 @@
             <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
                 <section class="content">
                     <div class="container" id="main-container">
-                        {{ content }}
+                        {% include anchor_headings.html html=content anchorBody="#" %}
                     </div>
                 </section>
             </div>
