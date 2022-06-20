@@ -9,20 +9,10 @@ body.body-posts section.content .highlight {
     margin-bottom: 0.5em;
 }
 
-body.body-posts section.content h1>a,
-h2>a,
-h3>a,
-h4>a,
-h5>a,
-h6>a {
+body.body-posts section.content .link-anchor {
     color: var(--bs-body-color);
 }
 
-body.body-posts section.content h1>a:hover,
-h2>a:hover,
-h3>a:hover,
-h4>a:hover,
-h5>a:hover,
-h6>a:hover {
+body.body-posts section.content .link-anchor:hover {
     color: var(--bs-body-color);
 }
