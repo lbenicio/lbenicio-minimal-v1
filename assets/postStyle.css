@@ -7,3 +7,11 @@ body.body-posts section.content {
     word-wrap: break-word;
     word-break: break-word;
 }
+
+body.body-posts section.content .highlight {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
