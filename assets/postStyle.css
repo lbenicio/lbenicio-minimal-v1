@@ -2,3 +2,8 @@ body.body-posts section.content img {
     max-width: 70vw !important;
     height: auto;
 }
+
+body.body-posts section.content {
+    word-wrap: break-word;
+    word-break: break-word;
+}
