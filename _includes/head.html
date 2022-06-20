@@ -12,6 +12,7 @@
 <meta content='text/html; charset=utf-8' http-equiv='content-type' />
 {% if page.date %}
 <link rel="stylesheet" href="{{ '/assets/postStyle.css' | prepend: (site.url + '/') }}">
+<link rel="stylesheet" href="{{ '/assets/monokai.css' | prepend: (site.url + '/') }}">
 <meta content='{{ site.url }}{{ page.url }}' property='og:url' />
 <meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
 <meta content="article" property="og:type" />
