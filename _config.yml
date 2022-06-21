@@ -11,6 +11,10 @@ reddit_username: your_username
 github_username: your_username
 linkedin_username: your_username
 
+sass:
+    sass_dir: assets
+    style: compressed
+
 # SEO
 twitter:
   username: your_username
