@@ -22,6 +22,13 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
+      - name: Install Dependencies
+        env:
+          RAILS_ENV: test
+        run: |
+          sudo apt-get update && sudo apt-get -y install minify
+      - name: Minify HTML
+        run: minify --type=html --recursive --output "./" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --verbose "./_site/" 
       - name: Install Jekyll
         run: bundle exec jekyll build
       - name: Check HTML
