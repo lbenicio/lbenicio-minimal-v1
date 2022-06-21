@@ -19,7 +19,7 @@ nav>ul, ul.post-list {
     list-style: none;
 }
 .h-main {
-    height: 70vh;
+    height: 80vh;
 }
 
 .fs-10 {
@@ -31,6 +31,6 @@ nav>ul, ul.post-list {
         width: 3rem;
     }
     .h-main {
-        height: 80vh;
+        height: 70vh;
     }
 }
