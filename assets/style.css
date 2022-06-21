@@ -30,4 +30,7 @@ nav>ul, ul.post-list {
     .fork-me {
         width: 3rem;
     }
+    .h-main {
+        height: 80vh;
+    }
 }
