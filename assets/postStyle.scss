@@ -1,0 +1,22 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+body.body-posts section.content {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+body.body-posts section.content .highlight {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+body.body-posts section.content .link-anchor {
+    color: var(--bs-body-color);
+}
+
+body.body-posts section.content .link-anchor:hover {
+    color: var(--bs-body-color);
+}
