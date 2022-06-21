@@ -42,6 +42,10 @@ plugins:
   - jekyll-google_search_console_verification_file
   - jekyll-minifier
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
 # Build settings
 permalink: pretty
 highlighter: rouge
