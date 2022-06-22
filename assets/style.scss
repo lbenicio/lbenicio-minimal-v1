@@ -43,6 +43,56 @@ ul.post-list {
     font-size: 0.5rem;
 }
 
+div.nav-container-up:before{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #f8f9fa;
+    width: 20px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    left: calc(50% - 1px);
+    margin-top: -1.8em;
+    flex: 1;
+    background-color: white;
+    height: 20px;
+}
+
+div.nav-container-up:after{
+    content:"";
+    position:absolute;
+    border-bottom:1px solid #f8f9fa;
+    width:20px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    left: calc(50% + 1px);
+    margin-top: -1em;
+}
+
+div.nav-container-down:before{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #f8f9fa;
+    width: 20px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    left: calc(50% - 1px);
+    margin-top: 2.7em;
+    flex: 1;
+    background-color: white;
+    height: 20px;
+}
+
+div.nav-container-down:after{
+    content:"";
+    position:absolute;
+    border-bottom:1px solid #f8f9fa;
+    width:20px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    left: calc(50% + 1px);
+    margin-top: 3.4em;
+}
+
 @media (max-width: 576px) {
     .fork-me {
         width: 3rem;
