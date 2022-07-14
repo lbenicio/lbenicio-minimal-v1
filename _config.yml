@@ -4,7 +4,7 @@ email: your@email.com
 description: Website description.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
+default_url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
 blog: "https://blog.your_blog_website.url"
 twitter_username: your_username
 keybase_username: your_username
