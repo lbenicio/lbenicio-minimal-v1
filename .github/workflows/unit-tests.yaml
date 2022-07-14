@@ -35,7 +35,6 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: "./_site"
-          arguments: --report-invalid-tags --report-missing-names --report-script-embeds --report-missing-doctype --report-eof-tags --report-mismatched-tags --assume-extension --check-external-hash --allow-hash-href --check-favicon --check-html --check-opengraph --enforce-https --disable-external
-
+          arguments: --help
       - name: Results
         run: echo "🍏 This job's status is ${{ job.status }}."
