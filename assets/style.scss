@@ -6,6 +6,10 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+#main-container {
+    overflow-wrap: break-word;
+}
+
 .fork-me {
     width: 13rem;
     right: 0;
