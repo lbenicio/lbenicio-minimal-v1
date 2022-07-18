@@ -97,6 +97,11 @@ div.nav-container-down:after{
     margin-top: 3.4em;
 }
 
+div.pagination {
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
 @media (max-width: 576px) {
     .fork-me {
         width: 3rem;
