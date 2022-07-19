@@ -1,0 +1,39 @@
+---
+layout: articles
+title: Categories
+icon: fa-comment-alt
+---
+<ul class="p-0 post-list d-flex flex-column justify-content-center text-center">
+  {% for post in site.posts %}
+    <li class="pb-3">
+        <a class="text-dark post-link" href="{{ post.url }}">
+        <span>{{ post.title }}</span>
+        <br>
+        <small class="fs-10 d-flex justify-content-center">{{ post.date | date: "%-d %B %Y" }}</small>
+        </a>
+    </li>
+  {% endfor %}
+</ul>
+{% if paginator.total_pages > 1 %}
+<ul class="pagination d-flex">
+  {% if paginator.previous_page %}
+  <li class="mr-auto">
+    <a class="pagination-nav text-black" href="{{ paginator.previous_page_path | prepend: site.url }}">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="ml-auto">
+    <a class="pagination-nav text-black" href="{{ paginator.next_page_path | prepend: site.url }}">Older</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+{% if paginator.page_trail %}
+<ul class="pagination d-flex">
+  {% for trail in paginator.page_trail %}
+    <li {% if page.url == trail.path %}class="selected"{% endif %}>
+        <a class="pagination-nav text-black" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
