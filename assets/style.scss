@@ -10,6 +10,15 @@ body {
     overflow-wrap: break-word;
 }
 
+#main-container h1 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+#main-container table td {
+    padding-right: 1em;
+}
+
 .fork-me {
     width: 13rem;
     right: 0;
