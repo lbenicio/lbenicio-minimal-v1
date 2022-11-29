@@ -119,8 +119,17 @@ div.nav-container-down:after{
 }
 
 #main-container .pagination {
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 1.5rem;
+}
+
+#main-container .pagination li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#main-container .pagination .selected {
+    text-decoration: underline;
 }
 
 @media (max-width: 576px) {

@@ -14,14 +14,26 @@ gem "rouge"
 gem "rake"
 
 group :development, :test do
+  gem "rubocop", "~> 1.38.0"
+  gem "rubocop-minitest"
+  gem "rubocop-performance"
+  gem "rubocop-rake"
+  gem "rubocop-rspec"
+  gem "jekyll_test_plugin"
+  gem "jekyll_test_plugin_malicious"
+  gem "benchmark-ips"
+  gem "rbtrace"
+  gem "ruby-prof"
+  gem "stackprof"
   gem "memory_profiler"
+  gem "httpclient"
   gem "rspec"
   gem "selenium-webdriver"
   gem "chromedriver-helper"
   gem "capybara"
   gem "rack-jekyll"
   gem "pry"
-  gem "html-proofer"
+  gem "html-proofer", "~> 3.19.4"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
