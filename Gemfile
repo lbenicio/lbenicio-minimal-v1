@@ -14,6 +14,7 @@ gem "rouge"
 gem "rake"
 
 group :development, :test do
+  gem "memory_profiler"
   gem "rspec"
   gem "selenium-webdriver"
   gem "chromedriver-helper"
