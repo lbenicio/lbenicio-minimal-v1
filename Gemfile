@@ -28,7 +28,7 @@ group :development, :test do
   gem 'rack-jekyll'
   gem 'rbtrace'
   gem 'rspec'
-  gem 'rubocop', '~> 1.38.0'
+  gem 'rubocop'
   gem 'rubocop-minitest'
   gem 'rubocop-performance'
   gem 'rubocop-rake'
@@ -36,8 +36,6 @@ group :development, :test do
   gem 'ruby-prof'
   gem 'selenium-webdriver'
   gem 'stackprof'
-  gem 'stackprof'
-  gem 'rubocop'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

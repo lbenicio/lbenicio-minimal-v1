@@ -114,7 +114,7 @@ jobs:
           checkout: true
           post_comment: 0
   rubocop:
-    name: "Rubocop Check"
+    name: "Rubocop"
     permissions:
       contents: read
       pull-requests: read
