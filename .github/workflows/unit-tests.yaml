@@ -17,16 +17,17 @@ jobs:
           JEKYLL_ENV: test
         run: |
           sudo apt-get update
-      - name: Bundle Install
-        env:
-          RAILS_ENV: test
-          JEKYLL_ENV: test
-        run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
       - name: Build Jekyll
+        env:
+          RAILS_ENV: test
+          JEKYLL_ENV: test
         run: bundle exec jekyll build
       - name: Testsuite
+        env:
+          RAILS_ENV: test
+          JEKYLL_ENV: test
         run: bundle exec rake test
       - name: Results
         run: echo "🍏 This job's status is ${{ job.status }}."
