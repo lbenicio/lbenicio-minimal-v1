@@ -147,6 +147,8 @@ jobs:
           RAILS_ENV: test
           JEKYLL_ENV: test
         run: bundle exec jekyll build
+      - name: Prepare test
+        run: rm -rf .gitignore *.md *.yml CNAME Gemfile Gemfile.lock LICENSE Rakefile .bundle .jekyll-cache vendor _site/benchmark .ruby-version CHANGELOG.md .github
       - name: rubocop
         env:
           RAILS_ENV: test
