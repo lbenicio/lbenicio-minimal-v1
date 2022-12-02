@@ -3,14 +3,21 @@ layout: collection
 title: Feed
 icon: fa-comment-alt
 ---
-<ul class="p-0 post-list d-flex flex-column justify-content-center text-center">
-  {% for post in site.posts %}
-    <li class="pb-3">
+<ul class="p-0 post-list">
+  {% for post in paginator.posts reversed %}
+    <li class="row mb-5">
+      <div class="col-12 d-flex justify-content-center text-center pb-2">
         <a class="text-dark post-link" href="{{ post.url }}">
         <span>{{ post.title }}</span>
         <br>
         <small class="fs-10 d-flex justify-content-center">{{ post.date | date: "%-d %B %Y" }}</small>
         </a>
+      </div>
+      {% assign ph_1 = post.content | split: '<p>' %}
+      {% assign ph_2 = ph_1[1] | split: '</p>' %}
+      {% assign ph = ph_2[0] | split: '</p>' %}
+      <div><p>{{ ph }}</p></div>
+      <div><p><a href="{{ post.url }}">Read more...</a></p></div>
     </li>
   {% endfor %}
 </ul>
