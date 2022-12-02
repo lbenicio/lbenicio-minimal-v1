@@ -48,7 +48,7 @@ jobs:
         run: echo "🍏 This job's status is ${{ job.status }}."
   Build-and-Deploy:
     runs-on: ubuntu-latest
-    needs: [Unit-Tests, spelling, benchmark]
+    needs: [Unit-Tests, spelling, benchmark, rubocop]
     if: "contains(github.event_name, 'pull_request') || github.event_name == 'push'"
     steps:
       - name: Check out repository code

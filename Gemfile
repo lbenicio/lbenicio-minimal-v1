@@ -36,6 +36,7 @@ group :development, :test do
   gem 'ruby-prof'
   gem 'selenium-webdriver'
   gem 'stackprof'
+  gem 'stackprof'
   gem 'rubocop'
 end
 
