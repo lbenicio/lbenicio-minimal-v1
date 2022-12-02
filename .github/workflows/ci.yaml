@@ -139,6 +139,9 @@ jobs:
           bundle install --jobs 4 --retry 3
           gem install rubocop
           gem install rubocop-minitest
+          gem install rubocop-performance
+          gem install rubocop-rake
+          gem install rubocop-rspec
       - name: Build Jekyll
         env:
           RAILS_ENV: test
