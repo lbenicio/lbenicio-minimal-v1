@@ -26,7 +26,7 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Build Jekyll
         run: bundle exec jekyll build
-      - name: Check HTML
+      - name: Testsuite
         run: bundle exec rake test
       - name: Results
         run: echo "🍏 This job's status is ${{ job.status }}."
