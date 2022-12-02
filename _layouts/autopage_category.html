@@ -4,7 +4,7 @@ title: Categories
 icon: fa-comment-alt
 ---
 <ul class="p-0 post-list">
-  {% for post in paginator.posts reversed %}
+  {% for post in paginator.posts %}
     <li class="row mb-5">
       <div class="col-12 d-flex justify-content-center text-center">
         <a class="text-dark post-link" href="{{ post.url }}">
