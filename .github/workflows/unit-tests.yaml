@@ -3,34 +3,29 @@ on: [push]
 jobs:
   Unit-Tests:
     runs-on: ubuntu-latest
+    if: "contains(github.event_name, 'pull_request') || github.event_name == 'push'"
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up Ruby
-        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        uses: ruby/setup-ruby@master
         with:
           ruby-version: 2.7
-      - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - name: Bundle Install
-        env:
-          RAILS_ENV: test
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
       - name: Install Dependencies
         env:
           RAILS_ENV: test
+          JEKYLL_ENV: test
         run: |
-          sudo apt-get update && sudo apt-get -y install minify 
-      - name: Install Jekyll
+          sudo apt-get update
+      - name: Bundle Install
+        env:
+          RAILS_ENV: test
+          JEKYLL_ENV: test
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - name: Build Jekyll
         run: bundle exec jekyll build
-      - name: Minify HTML
-        run: minify --type=html --recursive --output "./" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --verbose "./_site/"
       - name: Check HTML
         run: bundle exec rake test
       - name: Results
