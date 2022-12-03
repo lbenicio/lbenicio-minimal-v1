@@ -6,7 +6,8 @@ require 'html-proofer'
 require 'jekyll'
 require "rubygems"
 
-spec = Gem::Specification::load("lbenicio-minimal-v1.gemspec")
+gemspec_file = "lbenicio-minimal-v1.gemspec"
+spec = Gem::Specification::load(gemspec_file)
 version = spec.version
 name = spec.name
 
