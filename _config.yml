@@ -12,6 +12,7 @@ reddit_username: your_username
 github_username: your_username
 linkedin_username: your_username
 
+# CSS preprocessor
 sass:
   sass_dir: assets
   style: compressed
@@ -28,6 +29,7 @@ social:
     - https://github.com/your_username
     - https://keybase.io/your_username
 
+# logos
 logo: /assets/img/logo.png
 image: /assets/img/logo.png
 
