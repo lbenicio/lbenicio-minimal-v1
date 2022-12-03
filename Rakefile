@@ -8,6 +8,7 @@ require "rubygems"
 
 spec = Gem::Specification::load("lbenicio-minimal-v1.gemspec")
 version = spec.version
+name = spec.name
 
 namespace :profile do
   desc 'Profile allocations from a build session'
@@ -94,7 +95,7 @@ task :test do
   end
 end
 
-desc "Release v#{version}"
+desc "Release: #{version}"
 task :release => :build do
   current_branch = `git branch`.to_s.strip.match(%r!^\* (.+)$!)[1]
   unless current_branch == "main" || current_branch.end_with?("pagination")
