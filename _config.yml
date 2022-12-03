@@ -43,6 +43,7 @@ plugins:
   - jekyll-google_search_console_verification_file
   - jekyll-minifier
 
+# Uglify HTML
 jekyll-minifier:
   uglifier_args:
     harmony: true
