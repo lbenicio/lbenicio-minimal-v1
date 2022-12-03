@@ -4,6 +4,10 @@ abort('Please run this using `bundle exec rake`') unless ENV['BUNDLE_BIN_PATH']
 
 require 'html-proofer'
 require 'jekyll'
+require "rubygems"
+
+spec = Gem::Specification::load("lbenicio-minimal-v1.gemspec")
+version = spec.version
 
 namespace :profile do
   desc 'Profile allocations from a build session'
