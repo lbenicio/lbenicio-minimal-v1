@@ -20,3 +20,9 @@ bundle install
 ## Running
 ```bash
 bundle exec jekyll serve
+```
+
+## Unit Tests
+```bash
+bundle exec rake test
+```
