@@ -32,4 +32,21 @@ task :test do
   end
 end
 
+desc "Release v#{version}"
+task :release => :build do
+  current_branch = `git branch`.to_s.strip.match(%r!^\* (.+)$!)[1]
+  unless current_branch == "main" || current_branch.end_with?("pagination")
+    puts "You must be on the main branch to release!"
+    exit!
+  end
+  sh "gem push pkg/#{name}-#{version}.gem"
+end
+
+desc "Build #{name} v#{version} into pkg/"
+task :build do
+  mkdir_p "pkg"
+  sh "gem build #{gemspec_file}"
+  sh "mv #{gem_file} pkg"
+end
+
 task :default => [:test]
