@@ -2,21 +2,25 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-body.body-posts section.content {
+body.body-posts section.content #main-container {
     word-wrap: break-word;
     word-break: break-word;
 }
 
-body.body-posts section.content .highlight {
+body.body-posts section.content #main-container .highlight {
     padding: 0.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-body.body-posts section.content .link-anchor {
+body.body-posts section.content #main-container .link-anchor {
     color: var(--bs-body-color);
 }
 
-body.body-posts section.content .link-anchor:hover {
+body.body-posts section.content #main-container .link-anchor:hover {
     color: var(--bs-body-color);
+}
+
+body.body-posts section.content #main-container h1, h2, h3, h4, h5, h6 {
+    padding-top: 3rem;
 }

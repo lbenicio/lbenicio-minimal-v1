@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Posts
+icon: fa-comment-alt
+---
 
-<head>
-    {% include head.html %}
-</head>
-
-<body class="bg-body body-posts d-flex flex-column min-vh-100">
-    {% include fork.html %}
-    {% include navigation.html %}
-    <div class="container mt-2">
-        <div class="row">
-            <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
-                <section class="content">
-                    <div class="container-fluid" id="main-container">
-                        {% include anchor_headings.html html=content anchorBody="#" anchorClass="link-anchor" %}
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    {% include footer.html %}
-    {% include analytics.html %}
-</body>
-
-</html>
+{% include anchor_headings.html html=content anchorBody="#" anchorClass="link-anchor" %}
