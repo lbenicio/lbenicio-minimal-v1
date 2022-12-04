@@ -2,16 +2,17 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'lbenicio-minimal-v1'
-  spec.version       = '1.0.2'
+  spec.version       = '1.0.5'
   spec.authors       = ['Leonardo Benicio']
   spec.email         = ['developer@lbenicio.dev']
 
   spec.summary       = 'Personal website and blog theme.'
   spec.description   = 'A minimal theme for jekyll to be used on personal website and blogs..'
-  spec.homepage      = 'https://github.com/lbenicio/lbenicio-minimal1'
+  spec.homepage      = 'https://github.com/lbenicio/lbenicio-minimal-v1'
   spec.license       = 'GPL-3.0'
 
-  # spec.files         = git ls-files -z.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
+  all_files       = `git ls-files`.split("\n")
+  spec.files         = all_files.grep(%r!^(_includes|_layouts|assets|benchmark|rubocop|.ruby-verison|.rubocop.yml|Gemfile|lbenicio-minimal-v1.gemspec|Rakefile|LICENSE)/|^.rubocop.yml$!)
 
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.7.1'
   spec.add_development_dependency 'bundler', '~> 2.2.31'
