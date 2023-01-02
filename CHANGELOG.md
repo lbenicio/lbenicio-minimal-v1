@@ -13,3 +13,12 @@ All notable changes to this project will be documented in this file.
 ### Changed
  - add autopages layouts
  - fix pagination layout
+
+ ## v1.0.7
+### Changed
+ - bump version
+
+  ## v1.0.9
+### Changed
+ - add css for selected blog page
+ - fix github footer link

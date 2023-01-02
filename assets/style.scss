@@ -129,7 +129,8 @@ div.nav-container-down:after{
 }
 
 #main-container .pagination .selected {
-    text-decoration: underline;
+    font-weight: bold;
+    border-bottom: 2px solid black;
 }
 
 @media (max-width: 576px) {
