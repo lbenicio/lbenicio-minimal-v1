@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'jekyll-paginate-v2', '~> 3.0.0'
   spec.add_development_dependency 'jekyll-sitemap', '~> 1.12'
   spec.add_development_dependency 'jekyll-tagging', '~> 1.1.0'
-  spec.add_development_dependency 'jekyll-tagging-related_posts', '~> 1.1.0'
+  spec.add_development_dependency 'jekyll-tagging-related_posts', '~> 1.3.0'
 end
