@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'jekyll', '~> 4.2.0'
   spec.add_development_dependency 'jekyll-archives', '~> 2.2.1'
   spec.add_development_dependency 'jekyll-feed', '~> 1.12'
-  spec.add_development_dependency 'jekyll-minifier', '~> 0.0.3'
+  spec.add_development_dependency 'jekyll-minifier', '~> 0.1.10'
   spec.add_development_dependency 'jekyll-paginate-v2', '~> 3.0.0'
   spec.add_development_dependency 'jekyll-sitemap', '~> 1.12'
   spec.add_development_dependency 'jekyll-tagging', '~> 1.1.0'
