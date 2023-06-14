@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   all_files       = `git ls-files`.split("\n")
   spec.files         = all_files.grep(%r!^(_includes|_layouts|assets|benchmark|rubocop|.ruby-verison|.rubocop.yml|Gemfile|lbenicio-minimal-v1.gemspec|Rakefile|LICENSE)/|^.rubocop.yml$!)
 
-  spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.7.1'
+  spec.add_runtime_dependency 'jekyll-seo-tag', '>= 2.7.1', '< 2.9.0'
   spec.add_development_dependency 'bundler', '~> 2.2.31'
   spec.add_development_dependency 'jekyll', '~> 4.2.0'
   spec.add_development_dependency 'jekyll-archives', '~> 2.2.1'
