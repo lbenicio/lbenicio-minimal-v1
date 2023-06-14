@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'jekyll-seo-tag', '>= 2.7.1', '< 2.9.0'
   spec.add_development_dependency 'bundler', '~> 2.2.31'
-  spec.add_development_dependency 'jekyll', '~> 4.2.0'
+  spec.add_development_dependency 'jekyll', '~> 4.3.2'
   spec.add_development_dependency 'jekyll-archives', '~> 2.2.1'
   spec.add_development_dependency 'jekyll-feed', '~> 1.12'
   spec.add_development_dependency 'jekyll-minifier', '~> 0.1.10'
