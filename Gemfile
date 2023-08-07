@@ -19,7 +19,7 @@ group :development, :test do
   gem 'benchmark-ips'
   gem 'capybara'
   gem 'chromedriver-helper'
-  gem 'html-proofer', '~> 3.19.4'
+  gem 'html-proofer', '~> 5.0.8'
   gem 'httpclient'
   gem 'jekyll_test_plugin'
   gem 'jekyll_test_plugin_malicious'
