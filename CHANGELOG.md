@@ -9,16 +9,21 @@ All notable changes to this project will be documented in this file.
 ### Changed
  - Fix gemspec files structure
 
- ## v1.0.7
+## v1.0.7
 ### Changed
  - add autopages layouts
  - fix pagination layout
 
- ## v1.0.7
+## v1.0.7
 ### Changed
  - bump version
 
-  ## v1.0.9
+## v1.0.9
 ### Changed
  - add css for selected blog page
  - fix github footer link
+
+## v1.0.10
+### Changed
+ - add mastodon
+ - update urls

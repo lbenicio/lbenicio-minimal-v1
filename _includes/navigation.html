@@ -2,7 +2,7 @@
     <div class="row border-bottom border-1 border-light pb-4">
         <div class="offset-3 col-6">
             <div class="profile-picture">
-                <img src="/assets/profile.jpg" class="mx-auto d-block mt-5 rounded-circle" alt="profile picture">
+                <img src="{{ site.default_url }}/assets/profile.jpg" class="mx-auto d-block mt-5 rounded-circle" alt="profile picture">
             </div>
         </div>
     </div>
@@ -35,6 +35,9 @@
                 </li>
                 <li class="list-group-item border-0">
                     <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter text-black-50"></i></a>
+                </li>
+                <li class="list-group-item border-0"> 
+                    <a rel="me" href="https://mastodon.social/@{{ site.mastodon_username }}""><i class="fab fa-mastodon text-black-50"></i></a>
                 </li>
             </ul>
         </nav>

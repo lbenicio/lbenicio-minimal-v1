@@ -2,6 +2,7 @@ title: Website Title
 author: Leonardo Benicio
 email: your@email.com
 description: Website description.
+tagline: tagline description
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
 default_url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
