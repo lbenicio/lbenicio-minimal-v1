@@ -90,6 +90,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: my-last-uploaded-artifact
+          path: ./_site
       - name: Results
         run: echo "🍏 This job's status is ${{ job.status }}."
   rubocop:
