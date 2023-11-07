@@ -33,3 +33,7 @@ All notable changes to this project will be documented in this file.
  - update dependencies
  - remove unneeded code
  - refactor layouts
+
+## v1.1.2
+### Changed
+ - fix ci
