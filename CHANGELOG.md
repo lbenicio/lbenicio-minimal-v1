@@ -27,3 +27,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
  - add mastodon
  - update urls
+
+## v1.1.1
+### Changed
+ - update dependencies
+ - remove unneeded code
+ - refactor layouts
