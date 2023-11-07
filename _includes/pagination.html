@@ -1,7 +1,7 @@
 {% if paginator.total_pages > 1 %}
-<ul class="pagination d-flex">
+<ul class="pagination d-flex justify-content-evenly pt-3">
   {% if paginator.previous_page %}
-  <li class="mr-auto">
+  <li class="ms-3 me-3 me-auto">
     <a class="pagination-nav text-black" href="{{ paginator.previous_page_path | prepend: site.url }}">Newer</a>
   </li>
   {% endif %}
@@ -13,9 +13,9 @@
 </ul>
 {% endif %}
 {% if paginator.page_trail %}
-<ul class="pagination d-flex">
+<ul class="pagination d-flex justify-content-evenly pt-3">
   {% for trail in paginator.page_trail %}
-    <li {% if page.url == trail.path %}class="selected"{% endif %}>
+    <li class="ms-3 me-3 {% if page.url == trail.path %}selected font-weight-bold border-bottom border-dark{% endif %}">
         <a class="pagination-nav text-black" href="{{ trail.path | prepend: site.url }}" title="{{trail.title}}">{{ trail.num }}</a>
     </li>
   {% endfor %}

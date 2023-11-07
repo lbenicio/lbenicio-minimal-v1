@@ -10,15 +10,6 @@ body {
     overflow-wrap: break-word;
 }
 
-#main-container h1 {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-}
-
-#main-container table td {
-    padding-right: 1em;
-}
-
 .fork-me {
     width: 13rem;
     right: 0;
@@ -50,14 +41,6 @@ a.nav-blog-links:active {
 nav>ul,
 ul.post-list {
     list-style: none;
-}
-
-.h-main {
-    height: 80vh;
-}
-
-.fs-10 {
-    font-size: 0.5rem;
 }
 
 div.nav-container-up:before{
@@ -110,35 +93,8 @@ div.nav-container-down:after{
     margin-top: 3.4em;
 }
 
-.mr-auto {
-    margin-right: auto !important;
-}
-
-.ml-auto {
-    margin-left: auto !important;
-}
-
-#main-container .pagination {
-    justify-content: space-evenly;
-    padding-top: 1.5rem;
-}
-
-#main-container .pagination li {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#main-container .pagination .selected {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-}
-
 @media (max-width: 576px) {
     .fork-me {
         width: 3rem;
-    }
-
-    .h-main {
-        height: 70vh;
     }
 }

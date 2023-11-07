@@ -4,74 +4,114 @@ email: your@email.com
 description: Website description.
 tagline: tagline description
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
-default_url: "https://your_website.url" # the base hostname & protocol for your site, e.g. http://example.com
-blog: "https://blog.your_blog_website.url"
-twitter_username: your_username
-keybase_username: your_username
-reddit_username: your_username
-github_username: your_username
-linkedin_username: your_username
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+default_url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+blog: "http://127.0.0.1:4000"
+twitter_username: <username>
+keybase_username: <username>
+reddit_username: <username>
+github_username: <username>
+linkedin_username: <username>
+mastodon_username: <username>
 
-# CSS preprocessor
+# Google Analytics
+analytics:
+  google: G-TZ4BSC3K2P
+
+# Pagination and auto pages configuration
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 1
+  sort_field: 'date'
+  sort_reverse: true
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  pagination:
+  trail: 
+    before: 5
+    after: 5
+autopages:
+  enabled: true
+  categories: 
+    title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: false
+  tags:
+    title: 'Posts tagged with :tag'
+    permalink: '/tag/:tag'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: false
+  collections:
+    title: 'Feed :coll' # :coll is replaced by the collection name
+    permalink: '/feed/:coll'
+    silent: false
+    slugify:
+      mode: 'default'   # :coll is slugified.
+      case: false
+
+# SASS
 sass:
   sass_dir: assets
   style: compressed
 
 # SEO
 twitter:
-  username: your_username
+  username: <username>
   card: summary
 social:
   name: Your Name
   links:
-    - https://twitter.com/your_username
-    - https://linkedin.com/in/your_username
-    - https://github.com/your_username
-    - https://keybase.io/your_username
+    - https://twitter.com/<username>
+    - https://linkedin.com/in/<username>
+    - https://github.com/<username>
+    - https://keybase.io/<username>
 
-# logos
-logo: /assets/img/logo.png
-image: /assets/img/logo.png
+# Logo Data
+logo: /_assets/img/logo.png
+image: /_assets/img/logo.png
 
 # Build settings
+permalink: pretty
+highlighter: rouge
+timezone: America/Sao_Paulo
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
-  - jekyll-tagging
+  #- jekyll-tagging
   - jekyll-tagging-related_posts
   - jekyll-paginate-v2
-  - jekyll-google_search_console_verification_file
   - jekyll-minifier
-
-# Uglify HTML
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
-
-# Build settings
-permalink: pretty
-highlighter: rouge
-timezone: America/Brazil
-markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
 svg:
   optimize: true
 
-# Exclude from processing
+# Exclude from jekyll building process
 exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .github/
+  - _config.yml
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
-  - Gemfile
-  - Gemfile.lock
   - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
+  - benchmark
+  - .ruby-version
+  - CHANGELOG.md
+  - rubocop/
+  - .rubocop.yml
