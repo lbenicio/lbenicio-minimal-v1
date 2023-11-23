@@ -81,3 +81,9 @@ All notable changes to this project will be documented in this file.
 - fix broken links
 - fix config.yaml exaple names
 - update tags
+
+## v1.1.7
+
+### Changed
+
+- fix ci
