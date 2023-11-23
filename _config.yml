@@ -7,12 +7,12 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 default_url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 blog: "http://127.0.0.1:4000"
-twitter_username: <username>
-keybase_username: <username>
-reddit_username: <username>
-github_username: <username>
-linkedin_username: <username>
-mastodon_username: <username>
+twitter_username: username
+keybase_username: username
+reddit_username: username
+github_username: username
+linkedin_username: username
+mastodon_username: username
 
 # Google Analytics
 analytics:
