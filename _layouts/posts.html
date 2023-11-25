@@ -8,10 +8,10 @@
 <body class="bg-body d-flex flex-column min-vh-100 {% if page.date %} body-posts{% endif %}">
     {% include fork.html %}
     {% include navigation.html %}
-    <div class="container-fluid mt-2">
+    <div class="container-fluid">
         <div class="row">
             <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
-                <section class="content mt-2">
+                <section class="content mt-5">
                     <div class="container-fluid" id="main-container">
                         {% include anchor-headings.html html=content anchorBody="#" anchorClass="link-anchor" %}
                         {{ content }}

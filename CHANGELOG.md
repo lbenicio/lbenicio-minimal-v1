@@ -94,3 +94,9 @@ All notable changes to this project will be documented in this file.
 
 - update nav padding
 - remove dev code
+  
+## v1.1.9
+
+### Changed
+
+- update nav padding
