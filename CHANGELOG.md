@@ -100,3 +100,11 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - update nav padding
+
+## v1.2.0
+
+### Changed
+
+- fix deploy
+- fix ci
+- fix dependabot
