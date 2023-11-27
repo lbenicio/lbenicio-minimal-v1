@@ -128,7 +128,7 @@ All notable changes to this project will be documented in this file.
 - fix feed pagination
 - feed blog navigation
 
-## v1.3.1
+## v1.3.2
 
 ### Changed
 
