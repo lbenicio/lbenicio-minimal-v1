@@ -120,3 +120,10 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - add next/previous post navigation
+
+## v1.3.1
+
+### Changed
+
+- fix feed pagination
+- feed blog navigation
