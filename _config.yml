@@ -87,10 +87,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
-  #- jekyll-tagging
+#  - jekyll-tagging
   - jekyll-tagging-related_posts
   - jekyll-paginate-v2
   - jekyll-minifier
+  - jekyll-toc
 svg:
   optimize: true
 

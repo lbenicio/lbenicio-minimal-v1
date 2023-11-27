@@ -24,3 +24,11 @@ body.body-posts section.content #main-container .link-anchor:hover {
 body.body-posts section.content #main-container h1, h2, h3, h4, h5, h6 {
     padding-top: 3rem;
 }
+
+body.body-posts section.content #main-container .toc-entry a {
+    color: black !important;
+}
+
+body.body-posts section.content #main-container .toc-entry li  {
+    margin-top: 1rem;
+}

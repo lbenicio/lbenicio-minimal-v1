@@ -127,3 +127,10 @@ All notable changes to this project will be documented in this file.
 
 - fix feed pagination
 - feed blog navigation
+
+## v1.3.1
+
+### Changed
+
+- add table of contents
+- add reading time

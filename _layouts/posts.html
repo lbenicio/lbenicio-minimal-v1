@@ -8,11 +8,20 @@
 <body class="bg-body d-flex flex-column min-vh-100 {% if page.date %} body-posts{% endif %}">
     {% include fork.html %}
     {% include navigation.html %}
+    {% include blog-navigation.html %}
     <div class="container-fluid">
         <div class="row">
             <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
                 <section class="content mt-5">
                     <div class="container-fluid" id="main-container">
+                        <div class="reading-time">
+                            {% capture time %}{{ content | reading_time }}{% endcapture %}
+                            <p>This article will take {{ time }} {% if time == '1' %}minute{% else %}minutes{% endif %} to read.</p>
+                        </div>
+                        <div id="table-of-contents" class="">
+                            <h3 class="mb-3">Table of Contents</h3>
+                            {% toc %}
+                        </div>
                         {% include anchor-headings.html html=content anchorBody="#" anchorClass="link-anchor" %}
                         {% include post-navigation.html %}
                     </div>
