@@ -1,1 +1,8 @@
-<div> {{ post }} </div>
+<div class="d-flex flex-row justify-content-between mt-5 mb-5">
+    {% if page.previous %}
+        <a class=" text-black" href="{{ page.previous.url }}"><<< Previous</a>
+    {% endif %}
+    {% if page.next %}
+    <a class=" text-black" href="{{ page.next.url }}">Next >>></a>
+    {% endif %}
+</div>

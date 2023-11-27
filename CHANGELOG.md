@@ -114,3 +114,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - fix layout spacing
+
+## v1.3.0
+
+### Changed
+
+- add next/previous post navigation

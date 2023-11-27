@@ -8,3 +8,4 @@ vendor
 tmp
 .sass-cache
 .jekyll-metadata
+_posts
