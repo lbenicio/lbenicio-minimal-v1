@@ -142,3 +142,9 @@ All notable changes to this project will be documented in this file.
 - fix file handling imports
 - update dependecies
 - fix profile link
+
+## v1.4.0
+
+### Changed
+
+- fix links

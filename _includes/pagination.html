@@ -2,12 +2,12 @@
 <ul class="pagination d-flex justify-content-evenly pt-3">
   {% if paginator.previous_page %}
   <li class="ms-3 me-3 me-auto">
-    <a class="pagination-nav text-black" href="{{ paginator.previous_page_path | prepend: site.url }}">Newer</a>
+    <a class="pagination-nav text-black" href="{{ paginator.previous_page_path }}">Newer</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="ml-auto">
-    <a class="pagination-nav text-black" href="{{ paginator.next_page_path | prepend: site.url }}">Older</a>
+    <a class="pagination-nav text-black" href="{{ paginator.next_page_path }}">Older</a>
   </li>
   {% endif %}
 </ul>
@@ -16,7 +16,7 @@
 <ul class="pagination d-flex justify-content-evenly pt-3">
   {% for trail in paginator.page_trail %}
     <li class="ms-3 me-3 {% if page.url == trail.path %}selected font-weight-bold border-bottom border-dark{% endif %}">
-        <a class="pagination-nav text-black" href="{{ trail.path | prepend: site.url }}" title="{{trail.title}}">{{ trail.num }}</a>
+        <a class="pagination-nav text-black" href="{{ trail.path }}" title="{{trail.title}}">{{ trail.num }}</a>
     </li>
   {% endfor %}
 </ul>
