@@ -134,3 +134,11 @@ All notable changes to this project will be documented in this file.
 
 - add table of contents
 - add reading time
+
+## v1.3.3
+
+### Changed
+
+- fix file handling imports
+- update dependecies
+- fix profile link
