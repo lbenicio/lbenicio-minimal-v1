@@ -154,3 +154,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - switch to local imports
+
+## v1.5.0
+
+### Changed
+
+- add missing imports
