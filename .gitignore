@@ -4,7 +4,6 @@ Gemfile.lock
 _site
 .jekyll-cache
 .bundle
-vendor
 tmp
 .sass-cache
 .jekyll-metadata
