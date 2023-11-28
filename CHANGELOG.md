@@ -148,3 +148,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - fix links
+
+## v1.5.0
+
+### Changed
+
+- switch to local imports
