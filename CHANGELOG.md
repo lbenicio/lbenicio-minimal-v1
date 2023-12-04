@@ -160,3 +160,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - add missing imports
+
+## v1.5.3
+
+### Changed
+
+- fix pagination style
