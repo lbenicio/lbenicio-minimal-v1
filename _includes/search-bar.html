@@ -24,4 +24,22 @@
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.3/dist/algoliasearch-lite.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.7.0/dist/instantsearch.production.min.js"></script>
     <script src="/assets/vendor/search.js"></script>
+    <div id="algolia-props" class="d-none" data-algolia-application-id="{{ site.algolia.application_id }}" data-algolia-api-key={{ site.algolia.api_key }} data-algolia-index-name="{{ site.algolia.index_name }}" data-algolia-hits-per-page="{{ site.algolia.hits_per_page }}"></div>
+    <script>
+    document.addEventListener("DOMContentLoaded", (e) => {
+        try {
+            app({
+                appId: document.getElementById('algolia-props').dataset.algoliaApplicationId,
+                apiKey: document.getElementById('algolia-props').dataset.algoliaApiKey,
+                indexName: document.getElementById('algolia-props').dataset.algoliaIndexName,
+                searchParameters: {
+                    hitsPerPage: document.getElementById('algolia-props').dataset.algoliaHitsPerPage,
+                },
+            });
+        } catch (err) {
+            document.getElementById('search-box').remove();
+        };
+        document.getElementById('algolia-props').remove();
+    });
+    </script>
 </section>

@@ -1,14 +1,3 @@
-app({
-  appId: "0LUMG2U2NT",
-  apiKey: "6952f5c65c1fc81a2c0ff4ba7d2326cf",
-  indexName: "lbenicio-blog",
-  searchParameters: {
-    hitsPerPage: 10,
-  },
-});
-
-const searchImage = ``;
-
 function app(opts) {
   const search = instantsearch({
     searchClient: algoliasearch(opts.appId, opts.apiKey),
@@ -42,7 +31,6 @@ function app(opts) {
             sort.classList.add("d-none");
             rightColumn.classList.add("d-none");
           }
-          console.log(pagination)
           return isThereASearch
             ? `
             <div class="hit">

@@ -172,3 +172,12 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - add search support
+
+
+## v1.6.0
+
+### Changed
+
+- add search support
+- fix where algolia is not found
+- move env keys to config.yaml
