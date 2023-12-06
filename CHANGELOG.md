@@ -181,3 +181,9 @@ All notable changes to this project will be documented in this file.
 
 - fix build for ES6 jekyll uglifier
 - fix ci
+
+## v1.6.2
+
+### Changed
+
+- fix ES6 string building for search box

@@ -31,11 +31,14 @@ function app(opts) {
             sort.classList.add("d-none");
             rightColumn.classList.add("d-none");
           }
-          return isThereASearch
-            ?  '<div class="hit"><div class="hit-image ' + item.image ? "" : "d-none" + '><img src="' +
-                item.image + '" alt="' + item.name + '"></div><div class="hit-content"><h5 class="hit-name"><a href="${item.url}">' +
-                item.title + '</a></h5><p class="hit-description"><a href="' + item.url +
-                '"}>' + item.content.slice(0, 300) + '</a></p></div></div>' : "";
+          if (isThereASearch) {
+            return '<div class="hit"><div class="hit-image ' + (item.image ? "" : "d-none") + '"><img src="' +
+                item.image + '" alt="' + item.name + '"></div><div class="hit-content"><h5 class="hit-name"><a href="' +
+                item.url + '">' + item.title + '</a></h5><p class="hit-description"><a href="' + item.url +
+                '">' + item.content.slice(0, 300) + '</a></p></div></div>';
+          } else {
+              return "";
+            }
         },
         empty: getTemplate("no-results"),
       },
