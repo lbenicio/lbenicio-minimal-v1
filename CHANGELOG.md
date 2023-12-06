@@ -187,3 +187,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - fix ES6 string building for search box
+
+## v1.6.3
+
+### Changed
+
+- fix styling on layout spacing
