@@ -166,3 +166,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - fix pagination style
+
+## v1.6.0
+
+### Changed
+
+- add search support

@@ -35,7 +35,7 @@ a.nav-blog-links:link,
 a.nav-blog-links:visited,
 a.nav-blog-links:hover,
 a.nav-blog-links:active {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 nav>ul,

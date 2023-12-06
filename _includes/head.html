@@ -1,19 +1,26 @@
 <meta content='{{ site.title }}' property='og:title' />
 <!-- favicon -->
 <link href="{{ '/assets/favicon.ico'}}" rel='shortcut icon'>
+
 <!-- CSS -->
 <link href="{{ '/assets/vendor/bootstrap.min.css'}}" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ '/assets/css/style.css'}}">
-<link rel="stylesheet" href="{{ '/assets/vendor/all.min.css'}}">
+<link rel="stylesheet" href="{{'/assets/css/style.css'}}">
+<link rel="stylesheet" href="{{'/assets/vendor/all.min.css'}}">
+
+{% if page.layout == "feed" %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.2/themes/reset-min.css">
+<link rel="stylesheet" href="{{'/assets/css/search.css'}}">
+{% endif %}
+
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <!-- Configs -->
 <meta content='width=device-width, initial-scale=1.0, , maximum-scale=1, minimum-scale=1, user-scalable=no' name='viewport'>
 <meta content='text/html; charset=utf-8' http-equiv='content-type' />
 {% if page.date %}
-<link rel="stylesheet" href="{{ '/assets/css/post.css'}}">
-<link rel="stylesheet" href="{{ '/assets/css/monokai.css'}}">
+<link rel="stylesheet" href="{{'/assets/css/post.css'}}">
+<link rel="stylesheet" href="{{'/assets/css/monokai.css'}}">
 <meta content='{{ site.default_url }}{{ page.url }}' property='og:url' />
 <meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
 <meta content="article" property="og:type" />

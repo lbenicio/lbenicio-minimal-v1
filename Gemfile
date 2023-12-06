@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2", git: "https://github.com/lbenicio/jekyll-paginate-v2/"
   gem "jekyll-minifier"
   gem "liquid_reading_time"
+  gem 'jekyll-algolia'
 end
 
 group :development, :test do

@@ -1,0 +1,27 @@
+<section id="search-box" class="d-flex flex-column justify-content-center offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
+    <header>
+        <div id="search-input"></div>
+    </header>
+    <main>
+        <div id="right-column">
+            <div id="sort-by-wrapper"><span id="sort-by"></span></div>
+            <div id="stats"></div>
+            <div id="hits"></div>
+            <div id="pagination"></div>
+        </div>
+    </main>
+
+    <!-- TEMPLATES -->
+    <script type="text/html" id="no-results-template">
+        <div id="no-results-message">
+        <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+        <a href="." class='clear-all'>Clear search</a>
+        </div>
+    </script>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.3/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.7.0/dist/instantsearch.production.min.js"></script>
+    <script src="/assets/vendor/search.js"></script>
+</section>

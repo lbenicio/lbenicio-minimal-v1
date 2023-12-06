@@ -14,6 +14,11 @@ github_username: username
 linkedin_username: username
 mastodon_username: username
 
+# seach
+algolia:
+  application_id: 'your_application_id'
+  index_name: 'your-index-name'
+
 # Google Analytics
 analytics:
   google: G-TZ4BSC3K2P
