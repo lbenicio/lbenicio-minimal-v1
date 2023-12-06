@@ -14,6 +14,19 @@ github_username: username
 linkedin_username: username
 mastodon_username: username
 
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: true
+  gzip: true
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  external:
+    uglifier:
+      harmony: true
+
 # seach
 algolia:
   application_id: 'your_application_id'

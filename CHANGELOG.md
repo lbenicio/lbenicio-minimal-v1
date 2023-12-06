@@ -172,12 +172,12 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - add search support
+- fix where algolia is not found
+- move env keys to config.yaml
 
-
-## v1.6.0
+## v1.6.1
 
 ### Changed
 
-- add search support
-- fix where algolia is not found
-- move env keys to config.yaml
+- fix build for ES6 jekyll uglifier
+- fix ci

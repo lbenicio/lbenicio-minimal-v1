@@ -26,7 +26,7 @@
     <script src="/assets/vendor/search.js"></script>
     <div id="algolia-props" class="d-none" data-algolia-application-id="{{ site.algolia.application_id }}" data-algolia-api-key={{ site.algolia.api_key }} data-algolia-index-name="{{ site.algolia.index_name }}" data-algolia-hits-per-page="{{ site.algolia.hits_per_page }}"></div>
     <script>
-    document.addEventListener("DOMContentLoaded", (e) => {
+    document.addEventListener("DOMContentLoaded", function (e) {
         try {
             app({
                 appId: document.getElementById('algolia-props').dataset.algoliaApplicationId,

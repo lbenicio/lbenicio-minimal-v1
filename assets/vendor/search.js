@@ -1,5 +1,5 @@
 function app(opts) {
-  const search = instantsearch({
+  var search = instantsearch({
     searchClient: algoliasearch(opts.appId, opts.apiKey),
     indexName: opts.indexName,
     routing: true,
@@ -14,12 +14,12 @@ function app(opts) {
     instantsearch.widgets.hits({
       container: "#hits",
       templates: {
-        item: (item) => {
-          const isThereASearch = document.querySelector("input.ais-SearchBox-input").value !== "";
-          const pagination = document.querySelector("section#search-box div#pagination");
-          const stats = document.querySelector("section#search-box div#stats");
-          const sort = document.querySelector("section#search-box div#sort-by-wrapper");
-          const rightColumn = document.querySelector("section#search-box div#right-column");
+        item: function (item) {
+          var isThereASearch = document.querySelector("input.ais-SearchBox-input").value !== "";
+          var pagination = document.querySelector("section#search-box div#pagination");
+          var stats = document.querySelector("section#search-box div#stats");
+          var sort = document.querySelector("section#search-box div#sort-by-wrapper");
+          var rightColumn = document.querySelector("section#search-box div#right-column");
           if (isThereASearch) {
             pagination.classList.remove("d-none");
             stats.classList.remove("d-none");
@@ -32,21 +32,10 @@ function app(opts) {
             rightColumn.classList.add("d-none");
           }
           return isThereASearch
-            ? `
-            <div class="hit">
-                <div class="hit-image ${item.image ? '' : 'd-none'}"><img src="${
-                item.image
-              }" alt="${item.name}"></div>
-                <div class="hit-content">
-                    <h5 class="hit-name"><a href="${item.url}">${
-                item.title
-              }</a></h5>
-                    <p class="hit-description"><a href="${item.url}"
-                    }>${item.content.slice(0, 300)}</a></p>
-                </div>
-            </div>
-				    `
-            : "";
+            ?  '<div class="hit"><div class="hit-image ' + item.image ? "" : "d-none" + '><img src="' +
+                item.image + '" alt="' + item.name + '"></div><div class="hit-content"><h5 class="hit-name"><a href="${item.url}">' +
+                item.title + '</a></h5><p class="hit-description"><a href="' + item.url +
+                '"}>' + item.content.slice(0, 300) + '</a></p></div></div>' : "";
         },
         empty: getTemplate("no-results"),
       },
@@ -72,9 +61,9 @@ function app(opts) {
   search.start();
 }
 function getTemplate(templateName) {
-  return document.querySelector(`#${templateName}-template`).innerHTML;
+  return document.querySelector('#' + templateName + '-template').innerHTML;
 }
 
 function getHeader(title) {
-  return `<h5>${title}</h5>`;
+  return '<h5>' + title + '</h5>';
 }

@@ -17,6 +17,8 @@ group :jekyll_plugins do
   gem "jekyll-minifier"
   gem "liquid_reading_time"
   gem 'jekyll-algolia'
+  gem 'jekyll-uglify'
+  gem 'jekyll-assets'
 end
 
 group :development, :test do
