@@ -193,3 +193,10 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - fix styling on layout spacing
+
+## v1.6.4
+
+### Changed
+
+- update search style
+- update container footer
